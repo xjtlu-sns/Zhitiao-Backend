@@ -1,3 +1,5 @@
 # Slip-Backend
 
-Jiahao He
+- Jiahao He
+- Chenxu Fu
+- Junlin Qu
