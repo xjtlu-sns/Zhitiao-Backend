@@ -1,5 +1,6 @@
 # Slip-Backend
 
+- Chaoyi Liu
 - Wenqi Han
 - Meichen Bu
 - Jiahao He
