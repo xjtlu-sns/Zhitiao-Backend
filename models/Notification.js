@@ -11,7 +11,7 @@ const Schema = mongoose.Schema;
  * createdAt: When the notification created
  */
 
-const Notification = Schema({
+const NotificationSchema = Schema({
     fromUser: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
@@ -36,5 +36,5 @@ const Notification = Schema({
     },
 })
 
-const Notification = mongoose.model('Notification', Schema);
+const Notification = mongoose.model('Notification', NotificationSchema);
 module.exports = Notification;
