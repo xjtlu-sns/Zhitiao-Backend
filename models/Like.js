@@ -8,7 +8,7 @@ const Like = schema({
         ref: 'Message'
     },
 
-    comId:
+    comId:{
         type: mongoose.Types.ObjectId,
         ref: 'Comment'
     },
