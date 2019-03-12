@@ -5,31 +5,27 @@ const schema = mongoose.Schema;
     user: sender of this Comment
     targetCom : the Comment that this Comment comments on
     created_at: create time
-    id: Comment id
     content: Comment text
     anony: this comment is anonymous or not
-
-
 */
 
 const CommentModel = schema({
     msgId: {
-        type: mongoose.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Message',
     },
     user: {
-        type: mongoose.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
     },
     targetCom: {
-        type: mongoose.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Comment',
     },
     created_at: {
         type: String,
         default: Date.now,
     },
-    id: String,
     content: String,
     anony: String,
 })
