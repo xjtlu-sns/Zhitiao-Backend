@@ -1,7 +1,17 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const Nortification = new Schema({
+/**
+ * fromUser: The user who invoked
+ * toUser: The user who received
+ * type: The category of notification
+ * relatedMsg: The related message
+ * relatedCom: The related comment
+ * isRead: The flag reflects whether the message has been read
+ * createdAt: When the notification created
+ */
+
+const Notification = Schema({
     fromUser: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
@@ -22,6 +32,9 @@ const Nortification = new Schema({
     isRead: boolean,
     createdAt: {
         type: String,
-        default: DataCue.now,
+        default: Data.now,
     },
 })
+
+const Notification = mongoose.model('Notification', Schema);
+module.exports = Notification;
