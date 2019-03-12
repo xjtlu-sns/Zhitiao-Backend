@@ -4,11 +4,11 @@ const Schema = mongoose.Schema;
 
 const ChatroomSchema = Schema({
     users: [{
-        type: mongoose.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
     }],
     lastMsg: {
-        type: mongoose.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Chat',
     },
     createdAt: {
@@ -16,3 +16,7 @@ const ChatroomSchema = Schema({
         default: Date.now,
     }
 })
+
+const Chatroom = mongoose.model('Chatroom', ChatroomSchema);
+
+module.exports = Chatroom;
