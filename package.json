@@ -1,0 +1,23 @@
+{
+  "name": "Slip-Backend",
+  "version": "1.0.0",
+  "description": "- Chaoyi Liu\r - Wenqi Han\r - Meichen Bu\r - Jiahao He\r - Chenxu Fu\r - Junlin Qu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anslote/Slip-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anslote/Slip-Backend/issues"
+  },
+  "homepage": "https://github.com/Anslote/Slip-Backend#readme",
+  "dependencies": {
+    "mongoose": "^5.4.19"
+  }
+}
