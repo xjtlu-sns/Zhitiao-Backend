@@ -2,20 +2,20 @@ const mongoose = require('mongoose')
 
 const schema = mongoose.Schema;
 
-const Like = schema({
-    msgId:{
-        type: mongoose.Types.ObjectId,
-        ref: 'Message'
+const LikeModel = schema({
+    message: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Message',
     },
 
-    comId:{
-        type: mongoose.Types.ObjectId,
-        ref: 'Comment'
+    comment: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Comment',
     },
 
-    userInfo: {
-        type: mongoose.Types.ObjectId,
-        ref: 'User'
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
     },
     
     createdAt: {
@@ -26,6 +26,6 @@ const Like = schema({
     type: String,
 });
 
-const Like = mongoose.model('Like', Like);
+const Like = mongoose.model('Like', LikeModel);
 
-module.exports(Like);
+module.exports = Like;
