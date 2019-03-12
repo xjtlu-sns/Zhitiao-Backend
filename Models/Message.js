@@ -11,7 +11,7 @@ const schema = mongoose.Schema;
 const MessageModel = schema({
     user: {
         type:mongoose.Schema.Types.ObjectId,
-        ref:User
+        ref:'User'
     },
     content: String,
     location: String,
