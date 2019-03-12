@@ -1,5 +1,16 @@
 const mongoose = require('mongoose');
 const schema = mongoose.Schema;
+/*  Model for Comment
+    msgId: the message that this Comment comments on 
+    user: sender of this Comment
+    targetCom : the Comment that this Comment comments on
+    created_at: create time
+    id: Comment id
+    content: Comment text
+    anony: this comment is anonymous or not
+
+
+*/
 
 const CommentModel = schema({
     msgId: {
@@ -21,7 +32,6 @@ const CommentModel = schema({
     id: String,
     content: String,
     anony: String,
-    created: String,
 })
 
 const Comment = mongoose.model('Comment', CommentModel);
