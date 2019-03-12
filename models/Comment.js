@@ -10,7 +10,7 @@ const schema = mongoose.Schema;
 */
 
 const CommentModel = schema({
-    msgId: {
+    message: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Message',
     },
